@@ -6,6 +6,8 @@ import About from './pages/About';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Support from './pages/Support';
+import FAQ from './pages/FAQ';
+import ProFeatures from './pages/ProFeatures';
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/pro" element={<ProFeatures />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/support" element={<Support />} />

@@ -1,4 +1,4 @@
-import { Mail, MessageSquare, FileText, Phone } from 'lucide-react';
+import { Mail, FileText } from 'lucide-react';
 
 export default function Support() {
   return (
@@ -10,12 +10,10 @@ export default function Support() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mb-16 max-w-2xl mx-auto">
         {[
           { icon: <FileText className="w-6 h-6" />, title: 'Base de Conhecimento', desc: 'Artigos e tutoriais detalhados' },
-          { icon: <MessageSquare className="w-6 h-6" />, title: 'Chat ao Vivo', desc: 'Fale com um especialista agora' },
           { icon: <Mail className="w-6 h-6" />, title: 'E-mail', desc: 'suporte@vigila.app' },
-          { icon: <Phone className="w-6 h-6" />, title: 'Telefone', desc: '0800 123 4567' },
         ].map((item, idx) => (
           <div key={idx} className="bg-ardosia p-6 rounded-2xl border border-ardosia/50 hover:border-ouro/50 transition-colors text-center">
             <div className="w-12 h-12 bg-ouro/10 text-ouro rounded-full flex items-center justify-center mx-auto mb-4">

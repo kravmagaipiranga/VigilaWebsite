@@ -15,8 +15,8 @@ export default function Header() {
           </Link>
           <nav className="hidden md:flex space-x-8">
             <Link to="/about" className="text-pergaminho/70 hover:text-ouro transition-colors">Sobre a Vigila</Link>
-            <a href="/#features" className="text-pergaminho/70 hover:text-ouro transition-colors">Recursos PRO</a>
-            <a href="/#how-it-works" className="text-pergaminho/70 hover:text-ouro transition-colors">O Guia</a>
+            <Link to="/pro" className="text-pergaminho/70 hover:text-ouro transition-colors">Recursos PRO</Link>
+            <Link to="/faq" className="text-pergaminho/70 hover:text-ouro transition-colors">FAQ</Link>
             <Link to="/support" className="text-pergaminho/70 hover:text-ouro transition-colors">Suporte</Link>
           </nav>
           <div className="flex items-center">
