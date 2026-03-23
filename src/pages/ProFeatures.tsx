@@ -26,24 +26,10 @@ const proFeatures = [
 
 const plans = [
   {
-    name: "Teste",
-    price: "Grátis",
-    period: "/3 dias",
-    desc: "Experimente o poder total da sentinela sem compromisso.",
-    features: [
-      "Acesso total aos recursos PRO",
-      "Alertas em tempo real",
-      "Mapeamento granular",
-      "Protocolos especializados"
-    ],
-    cta: "Iniciar Teste",
-    highlight: false
-  },
-  {
-    name: "Semanal",
+    name: "7 Dias",
     price: "R$ 9,90",
-    period: "/7 dias",
-    desc: "Ideal para missões curtas ou viagens pontuais.",
+    period: "",
+    desc: "Acesso temporário",
     features: [
       "Acesso total aos recursos PRO",
       "Alertas em tempo real",
@@ -54,10 +40,10 @@ const plans = [
     highlight: false
   },
   {
-    name: "Anual",
+    name: "1 Ano",
     price: "R$ 29,90",
-    period: "/ano",
-    desc: "A melhor escolha para profissionais em campo.",
+    period: "",
+    desc: "Custo-benefício",
     features: [
       "Acesso total aos recursos PRO",
       "Alertas em tempo real",
@@ -70,8 +56,8 @@ const plans = [
   {
     name: "Vitalício",
     price: "R$ 49,90",
-    period: "/único",
-    desc: "Proteção permanente. Sem renovações, sem limites.",
+    period: "",
+    desc: "Para sempre",
     features: [
       "Acesso total aos recursos PRO",
       "Alertas em tempo real",
@@ -126,7 +112,7 @@ export default function ProFeatures() {
             <p className="text-pergaminho/60">Planos flexíveis para diferentes níveis de exigência.</p>
           </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
             {plans.map((plan, index) => (
               <motion.div 
                 key={index}
