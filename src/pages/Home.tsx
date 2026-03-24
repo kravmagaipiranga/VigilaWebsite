@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Shield, BookOpen, Lock, MapPin, Smartphone, ArrowRight, CheckCircle2, ShieldAlert, Star } from 'lucide-react';
+import { Shield, BookOpen, Lock, MapPin, Smartphone, ArrowRight, CheckCircle2, ShieldAlert, Star, Mic, ListChecks, Users } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -129,44 +129,44 @@ export default function Home() {
       <section id="features" className="py-24 bg-obsidiana">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-ouro font-semibold tracking-wide uppercase text-sm mb-2">A Promessa da Vigila</h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-pergaminho mb-4">Você nunca entra no desconhecido sem saber o que te espera</h3>
+            <h2 className="text-ouro font-semibold tracking-wide uppercase text-sm mb-2">Principais Funcionalidades</h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-pergaminho mb-4">O seu parceiro tático para o dia a dia</h3>
             <p className="text-pergaminho/70 text-lg">
-              Informação específica para a sua cidade, bairro, contexto. Quanto mais granular, mais útil. A precisão é uma forma de respeito.
+              Desenvolvido para antecipar riscos e agir rápido em emergências. A prevenção é a sua melhor arma.
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: <BookOpen className="w-8 h-8 text-ouro" />,
-                title: 'Inteligência de Campo',
-                desc: 'O parceiro discreto que conhece o terreno antes que você chegue e lembra o que você precisa verificar quando a urgência embota o raciocínio.'
-              },
-              {
-                icon: <Lock className="w-8 h-8 text-ouro" />,
-                title: 'Autonomia',
-                desc: 'A Vigila não substitui o julgamento humano. Ela o amplia. Dá as ferramentas para tomar decisões informadas em situações de alto risco.'
-              },
-              {
-                icon: <Shield className="w-8 h-8 text-ouro" />,
-                title: 'Presença',
-                desc: 'A voz calma que sabe o que fazer quando você esquece. O parceiro que não precisa de sinal para agir e garante que você nunca se sinta sozinho.'
+                icon: <ShieldAlert className="w-8 h-8 text-ouro" />,
+                title: 'Botão SOS & Alarme',
+                desc: 'Acesso imediato à sua rede de apoio. Acione um alarme sonoro de alta intensidade para afastar ameaças ou envie alertas silenciosos.'
               },
               {
                 icon: <MapPin className="w-8 h-8 text-ouro" />,
-                title: 'Vigilância',
-                desc: 'Estado permanente de atenção calibrada. Não paranoia — consciência. Clareza absoluta sobre o ambiente real em que você está inserido.'
+                title: 'Localização e Rastreamento',
+                desc: 'Obtenha suas coordenadas exatas (GPS) e compartilhe sua localização em tempo real com contatos de confiança em um clique.'
               },
               {
-                icon: <Smartphone className="w-8 h-8 text-ouro" />,
-                title: 'Discrição',
-                desc: 'A segurança real não anuncia a si mesma. Presença sem arrogância. O app que você abre uma vez e não precisa explicar para ninguém.'
+                icon: <Mic className="w-8 h-8 text-ouro" />,
+                title: 'Gravação de Áudio Discreta',
+                desc: 'Inicie uma gravação de áudio em segundo plano para registrar evidências de situações de risco sem chamar atenção.'
               },
               {
-                icon: <ShieldAlert className="w-8 h-8 text-ouro" />,
-                title: 'Precisão',
-                desc: 'Não dados genéricos. Não avisos vagos. Cada número, cada risco, cada checklist — testado, atualizado e rigorosamente verificado.'
+                icon: <ListChecks className="w-8 h-8 text-ouro" />,
+                title: 'Checklists de Segurança',
+                desc: 'Crie rotinas de verificação para sua casa, veículo ou viagens. A prevenção é a sua melhor arma.'
+              },
+              {
+                icon: <BookOpen className="w-8 h-8 text-ouro" />,
+                title: 'Guias de Sobrevivência (PRO)',
+                desc: 'Manuais táticos completos sobre como agir em desastres, emergências médicas, assaltos e situações de crise.'
+              },
+              {
+                icon: <Users className="w-8 h-8 text-ouro" />,
+                title: 'Rede de Apoio',
+                desc: 'Tenha os números de emergência oficiais (Polícia, Bombeiros, Hospitais) e seus contatos pessoais a um toque de distância.'
               }
             ].map((feature, idx) => (
               <motion.div 
@@ -198,9 +198,9 @@ export default function Home() {
               
               <div className="space-y-8 mt-10">
                 {[
-                  { step: '01', title: 'Consciência Situacional', desc: 'Mapeamento prévio de áreas de risco, rotas de fuga e pontos seguros na sua região de atuação.' },
+                  { step: '01', title: 'Consciência Situacional', desc: 'Compartilhamento de localização em tempo real e acesso imediato à sua rede de apoio.' },
                   { step: '02', title: 'Checklists Verificados', desc: 'Protocolos de segurança atualizados para diferentes cenários, de coberturas jornalísticas a missões humanitárias.' },
-                  { step: '03', title: 'Comunicação Silenciosa', desc: 'Alertas discretos e precisos que informam sem chamar atenção indesejada para você ou sua equipe.' }
+                  { step: '03', title: 'Comunicação Silenciosa', desc: 'Alertas silenciosos e gravação de áudio discreta para registrar evidências sem chamar atenção indesejada.' }
                 ].map((item, idx) => (
                   <div key={idx} className="flex">
                     <div className="flex-shrink-0 mr-6">

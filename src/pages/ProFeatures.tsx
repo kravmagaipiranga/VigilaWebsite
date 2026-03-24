@@ -4,37 +4,51 @@ import { Check, Shield, Zap, MapPin, Smartphone, Star, ArrowRight } from 'lucide
 const proFeatures = [
   {
     icon: <Shield className="w-6 h-6 text-ouro" />,
-    title: "Alertas em Tempo Real",
-    desc: "Notificações instantâneas sobre mudanças no status de segurança da sua zona atual ou rotas planejadas."
+    title: "Guias de Sobrevivência",
+    desc: "Manuais táticos completos sobre como agir em desastres, emergências médicas, assaltos e situações de crise."
   },
   {
     icon: <MapPin className="w-6 h-6 text-ouro" />,
-    title: "Mapeamento Granular",
-    desc: "Acesso a dados detalhados por bairro e rua, com histórico de incidentes e análise de tendências."
+    title: "Diário de Incidentes",
+    desc: "Registre atitudes suspeitas, ameaças ou eventos incomuns com data e hora para manter um histórico de segurança."
   },
   {
     icon: <Zap className="w-6 h-6 text-ouro" />,
-    title: "Protocolos Especializados",
-    desc: "Checklists avançados para cenários específicos: extração, vigilância, proteção de VIPs e áreas de conflito."
+    title: "Perfis Especializados",
+    desc: "Guias e checklists focados na sua rotina: Agente de Segurança, Professor, Profissional da Saúde, Turista, etc."
   },
   {
     icon: <Smartphone className="w-6 h-6 text-ouro" />,
-    title: "Modo Offline Completo",
-    desc: "Baixe mapas e protocolos de regiões inteiras para uso sem qualquer conexão de dados."
+    title: "Checklists Inteligentes",
+    desc: "Rotinas de verificação avançadas com sugestões automáticas para sua casa, veículo ou viagens."
   }
 ];
 
 const plans = [
   {
+    name: "Teste Grátis",
+    price: "R$ 0,00",
+    period: "/3 dias",
+    desc: "Experimente todo o poder do VIGILA PRO gratuitamente por 3 dias. Retorna ao plano Básico após o teste.",
+    features: [
+      "Acesso total aos recursos PRO",
+      "Guias de Sobrevivência",
+      "Diário de Incidentes",
+      "Perfis Especializados"
+    ],
+    cta: "Iniciar Teste",
+    highlight: false
+  },
+  {
     name: "7 Dias",
     price: "R$ 9,90",
     period: "",
-    desc: "Acesso temporário",
+    desc: "Ideal para viagens curtas ou eventos.",
     features: [
-      "Acesso total aos recursos PRO",
-      "Alertas em tempo real",
-      "Mapeamento granular",
-      "Protocolos especializados"
+      "Tudo do plano Básico",
+      "Guias de Sobrevivência",
+      "Diário de Incidentes",
+      "Perfis Especializados"
     ],
     cta: "Obter Acesso",
     highlight: false
@@ -43,12 +57,12 @@ const plans = [
     name: "1 Ano",
     price: "R$ 29,90",
     period: "",
-    desc: "Custo-benefício",
+    desc: "Proteção contínua e tranquilidade o ano todo.",
     features: [
-      "Acesso total aos recursos PRO",
-      "Alertas em tempo real",
-      "Mapeamento granular",
-      "Protocolos especializados"
+      "Tudo do plano Básico",
+      "Guias de Sobrevivência",
+      "Diário de Incidentes",
+      "Perfis Especializados"
     ],
     cta: "Obter Acesso",
     highlight: true
@@ -57,12 +71,12 @@ const plans = [
     name: "Vitalício",
     price: "R$ 49,90",
     period: "",
-    desc: "Para sempre",
+    desc: "Pagamento único. O VIGILA PRO é seu para sempre.",
     features: [
-      "Acesso total aos recursos PRO",
-      "Alertas em tempo real",
-      "Mapeamento granular",
-      "Protocolos especializados"
+      "Tudo do plano Básico",
+      "Guias de Sobrevivência",
+      "Diário de Incidentes",
+      "Perfis Especializados"
     ],
     cta: "Obter Acesso Vitalício",
     highlight: false
@@ -112,7 +126,7 @@ export default function ProFeatures() {
             <p className="text-pergaminho/60">Planos flexíveis para diferentes níveis de exigência.</p>
           </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {plans.map((plan, index) => (
               <motion.div 
                 key={index}

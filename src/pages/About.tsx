@@ -102,7 +102,7 @@ export default function About() {
                 num: '05',
                 icon: <Target className="w-6 h-6 text-ouro" />,
                 title: 'Precisão',
-                desc: 'Não dados genéricos. Não avisos vagos. Informação específica para a sua cidade, bairro, contexto. Quanto mais granular, mais útil. A precisão é uma forma de respeito.'
+                desc: 'Não dados genéricos. Não avisos vagos. Informação específica para a sua cidade, bairro, contexto. A precisão é uma forma de respeito.'
               },
               {
                 num: '06',
@@ -137,26 +137,26 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[
-              { title: 'Professores', desc: 'Para quem atua em áreas de vulnerabilidade e precisa de rotas seguras e consciência do entorno no trajeto diário.' },
-              { title: 'Ativistas', desc: 'Para quem lida com temas sensíveis e necessita de discrição absoluta, comunicações seguras e protocolos rígidos.' },
-              { title: 'Funcionários de ONGs', desc: 'Para missões de campo onde a inteligência prévia e o mapeamento de riscos ditam o sucesso e a segurança da operação.' },
-              { title: 'Agentes de Segurança', desc: 'Uma camada extra de inteligência situacional, fornecendo dados granulares e atualizados sobre o terreno.' },
-              { title: 'Profissionais de Saúde', desc: 'Para quem realiza atendimentos domiciliares em áreas complexas, precisando de alertas em tempo real e rotas verificadas.' },
-              { title: 'Turistas', desc: 'Para explorar o desconhecido com a vantagem de quem conhece o terreno como um local. Sem surpresas, apenas a jornada.' },
-              { title: 'Cidadãos Comuns', desc: 'Para pessoas que simplesmente querem se sentir mais seguras no seu dia a dia, com informação precisa e sem paranoia.' },
+              { title: 'Agente de Segurança', desc: 'Uma camada extra de inteligência situacional, fornecendo checklists inteligentes e diário de incidentes.' },
+              { title: 'Professor', desc: 'Para quem atua em áreas de vulnerabilidade e precisa de rotas seguras e consciência do entorno no trajeto diário.' },
+              { title: 'Voluntário em ONG', desc: 'Para missões de campo onde a inteligência prévia e os guias de sobrevivência ditam o sucesso e a segurança da operação.' },
+              { title: 'Profissional da Saúde', desc: 'Para quem realiza atendimentos domiciliares em áreas complexas, precisando de guias de sobrevivência e checklists focados.' },
+              { title: 'Turista', desc: 'Para explorar o desconhecido com a vantagem de quem conhece o terreno como um local. Sem surpresas, apenas a jornada.' },
+              { title: 'Figura Pública', desc: 'Para quem lida com temas sensíveis e necessita de discrição absoluta, comunicações seguras e protocolos rígidos.' },
+              { title: 'Perfil Genérico', desc: 'Para cidadãos comuns que simplesmente querem se sentir mais seguros no seu dia a dia, com informação precisa e sem paranoia.' },
             ].map((profile, idx) => (
               <div 
                 key={idx} 
                 className={`bg-ardosia/30 p-6 rounded-xl border border-ardosia hover:border-ouro/30 transition-colors ${
-                  profile.title === 'Cidadãos Comuns' 
+                  profile.title === 'Perfil Genérico' 
                     ? 'md:col-span-2 lg:col-span-3 xl:col-span-4 text-center flex flex-col items-center justify-center py-12' 
                     : ''
                 }`}
               >
-                <h4 className={`font-bold mb-2 text-ouro ${profile.title === 'Cidadãos Comuns' ? 'text-2xl mb-4' : 'text-lg'}`}>
+                <h4 className={`font-bold mb-2 text-ouro ${profile.title === 'Perfil Genérico' ? 'text-2xl mb-4' : 'text-lg'}`}>
                   {profile.title}
                 </h4>
-                <p className={`text-pergaminho/70 leading-relaxed ${profile.title === 'Cidadãos Comuns' ? 'text-base max-w-2xl' : 'text-sm'}`}>
+                <p className={`text-pergaminho/70 leading-relaxed ${profile.title === 'Perfil Genérico' ? 'text-base max-w-2xl' : 'text-sm'}`}>
                   {profile.desc}
                 </p>
               </div>

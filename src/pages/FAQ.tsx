@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const faqs = [
   {
     question: "O que é a Vigila?",
-    answer: "A Vigila é uma plataforma de inteligência de campo e segurança pessoal desenhada para profissionais de alto risco, ONGs, jornalistas e cidadãos que buscam maior consciência situacional. Ela fornece dados granulares, checklists de segurança e alertas em tempo real."
+    answer: "A Vigila é uma plataforma de inteligência de campo e segurança pessoal desenhada para profissionais de alto risco, ONGs, jornalistas e cidadãos que buscam maior consciência situacional. Ela fornece botão SOS, compartilhamento de localização, checklists de segurança e gravação de áudio discreta."
   },
   {
     question: "A Vigila substitui o treinamento de segurança?",
@@ -25,8 +25,8 @@ const faqs = [
     answer: "Sim. Os checklists e mapas baixados anteriormente ficam disponíveis offline, garantindo que você tenha acesso aos protocolos essenciais mesmo em áreas sem cobertura de rede."
   },
   {
-    question: "Qual a diferença entre a versão Gratuita e a PRO?",
-    answer: "A versão gratuita oferece acesso a checklists básicos e informações gerais. A versão PRO inclui alertas em tempo real, mapeamento granular de zonas de risco e protocolos especializados."
+    question: "Qual a diferença entre o Plano Básico e o PRO?",
+    answer: "O Plano Básico (Gratuito e Vitalício) oferece acesso ao Botão SOS, Alarme, Compartilhamento de Localização, Contatos de Emergência e Checklist Manual. O VIGILA PRO inclui tudo do Básico mais Guias de Sobrevivência, Diário de Incidentes, Perfis Especializados e Checklists Inteligentes com sugestões automáticas."
   }
 ];
 
