@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Check, Shield, Zap, MapPin, Smartphone, Star, ArrowRight } from 'lucide-react';
 
 const proFeatures = [
@@ -172,8 +173,6 @@ export default function ProFeatures() {
                 </ul>
                 <a 
                   href="https://vigila-v1-0.vercel.app/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
                   className={`w-full py-4 rounded-xl font-bold text-center block transition-all ${
                     plan.highlight 
                       ? 'bg-obsidiana text-pergaminho hover:bg-ardosia shadow-xl' 
@@ -189,7 +188,7 @@ export default function ProFeatures() {
 
         {/* Final CTA */}
         <div className="mt-32 text-center">
-          <p className="text-pergaminho/40 mb-8">Precisa de uma solução para equipes maiores ou ONGs? <a href="/support" className="text-ouro hover:underline transition-all">Fale conosco</a> para planos corporativos.</p>
+          <p className="text-pergaminho/40 mb-8">Precisa de uma solução para equipes maiores ou ONGs? <Link to="/support" className="text-ouro hover:underline transition-all">Fale conosco</Link> para planos corporativos.</p>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ export default function Footer() {
               <li><Link to="/about" className="text-pergaminho/60 hover:text-ouro text-sm transition-colors">Sobre a Vigila</Link></li>
               <li><Link to="/pro" className="text-pergaminho/60 hover:text-ouro text-sm transition-colors">Recursos PRO</Link></li>
               <li><Link to="/faq" className="text-pergaminho/60 hover:text-ouro text-sm transition-colors">FAQ</Link></li>
-              <li><a href="https://vigila-v1-0.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-pergaminho/60 hover:text-ouro text-sm transition-colors">Acessar</a></li>
+              <li><a href="https://vigila-v1-0.vercel.app/" className="text-pergaminho/60 hover:text-ouro text-sm transition-colors">Acessar</a></li>
             </ul>
           </div>
           
